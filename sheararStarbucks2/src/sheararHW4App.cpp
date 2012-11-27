@@ -39,7 +39,8 @@ Entry* sheararHW4App::readFile(){
 
 	arrlength = 1000;
 	count = 0;
-
+	//Referenced how JoshRuebusch used getline() to read in the .csv file for both of these while loops
+	//Had a lot of trouble getting file to read in correctly
 	while(!in.eof()){			
 		string line, identifier_;
 		double xin;
