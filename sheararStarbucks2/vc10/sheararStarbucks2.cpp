@@ -190,9 +190,9 @@ Entry* sheararStarbucks2::searchGrid(double x, double y, grid* g)
 
 	if(x <= g1 && y <= g1){		
 		for(int i = 0; i<a; i++){
-			double temp = calculateDistance(x,y,(g->a_[a]));
+			double temp = calculateDistance(x,y,(g->a_[i]));
 			if(temp<min){
-				min = calculateDistance(x,y,(g->a_[a]));
+				min = calculateDistance(x,y,(g->a_[i]));
 				pos = i;
 			}
 		}				
@@ -200,9 +200,9 @@ Entry* sheararStarbucks2::searchGrid(double x, double y, grid* g)
 	}
 	if((x >= g1 && x <= g2) && y <= g1){
 		for(int i = 0; i<b; i++){
-			double temp = calculateDistance(x,y,(g->b_[b]));
+			double temp = calculateDistance(x,y,(g->b_[i]));
 			if(temp<min){
-				min = calculateDistance(x,y,(g->b_[b]));
+				min = calculateDistance(x,y,(g->b_[i]));
 				pos = i;
 			}
 		}				
@@ -210,9 +210,9 @@ Entry* sheararStarbucks2::searchGrid(double x, double y, grid* g)
 	}
 	if((x >= g2 && x <= g3) && y <= g1){
 		for(int i = 0; i<c; i++){
-			double temp = calculateDistance(x,y,(g->c_[c]));
+			double temp = calculateDistance(x,y,(g->c_[i]));
 			if(temp<min){
-				min = calculateDistance(x,y,(g->c_[c]));
+				min = calculateDistance(x,y,(g->c_[i]));
 				pos = i;
 			}
 		}				
@@ -220,9 +220,9 @@ Entry* sheararStarbucks2::searchGrid(double x, double y, grid* g)
 	}
 	if((x >= g3 && x <= g4) && y <= g1){
 		for(int i = 0; i<d; i++){
-			double temp = calculateDistance(x,y,(g->d_[d]));
+			double temp = calculateDistance(x,y,(g->d_[i]));
 			if(temp<min){
-				min = calculateDistance(x,y,(g->d_[d]));
+				min = calculateDistance(x,y,(g->d_[i]));
 				pos = i;
 			}
 		}				
@@ -230,9 +230,9 @@ Entry* sheararStarbucks2::searchGrid(double x, double y, grid* g)
 	}
 	if(x <= g1 && (y >= g1 && y <= g2)){
 		for(int i = 0; i<ec; i++){
-			double temp = calculateDistance(x,y,(g->e_[ec]));
+			double temp = calculateDistance(x,y,(g->e_[i]));
 			if(temp<min){
-				min = calculateDistance(x,y,(g->e_[ec]));
+				min = calculateDistance(x,y,(g->e_[i]));
 				pos = i;
 			}
 		}				
@@ -240,9 +240,9 @@ Entry* sheararStarbucks2::searchGrid(double x, double y, grid* g)
 	}
 	if((x >= g1 && x <= g2) && (y >= g1 && y <= g2)){
 		for(int i = 0; i<f; i++){
-			double temp = calculateDistance(x,y,(g->f_[f]));
+			double temp = calculateDistance(x,y,(g->f_[i]));
 			if(temp<min){
-				min = calculateDistance(x,y,(g->f_[f]));
+				min = calculateDistance(x,y,(g->f_[i]));
 				pos = i;
 			}
 		}				
@@ -250,9 +250,9 @@ Entry* sheararStarbucks2::searchGrid(double x, double y, grid* g)
 	}
 	if((x >= g2 && x <= g3) && (y >= g1 && y <= g2)){
 		for(int i = 0; i<gc; i++){
-			double temp = calculateDistance(x,y,(g->g_[gc]));
+			double temp = calculateDistance(x,y,(g->g_[i]));
 			if(temp<min){
-				min = calculateDistance(x,y,(g->g_[gc]));
+				min = calculateDistance(x,y,(g->g_[i]));
 				pos = i;
 			}
 		}				
@@ -260,9 +260,9 @@ Entry* sheararStarbucks2::searchGrid(double x, double y, grid* g)
 	}
 	if((x >= g3 && x <= g4) && (y >= g1 && y <= g2)){
 		for(int i = 0; i<h; i++){
-			double temp = calculateDistance(x,y,(g->h_[h]));
+			double temp = calculateDistance(x,y,(g->h_[i]));
 			if(temp<min){
-				min = calculateDistance(x,y,(g->h_[h]));
+				min = calculateDistance(x,y,(g->h_[i]));
 				pos = i;
 			}
 		}				
@@ -280,9 +280,9 @@ Entry* sheararStarbucks2::searchGrid(double x, double y, grid* g)
 	}
 	if((x >= g1 && x <= g2) && (y >= g2 && y <= g3)){
 		for(int i = 0; i<j; i++){
-			double temp = calculateDistance(x,y,(g->j_[j]));
+			double temp = calculateDistance(x,y,(g->j_[i]));
 			if(temp<min){
-				min = calculateDistance(x,y,(g->j_[j]));
+				min = calculateDistance(x,y,(g->j_[i]));
 				pos = i;
 			}
 		}				
@@ -290,9 +290,9 @@ Entry* sheararStarbucks2::searchGrid(double x, double y, grid* g)
 	}
 	if((x >= g2 && x <= g3) && (y >= g2 && y <= g3)){
 		for(int i = 0; i<k; i++){
-			double temp = calculateDistance(x,y,(g->k_[k]));
+			double temp = calculateDistance(x,y,(g->k_[i]));
 			if(temp<min){
-				min = calculateDistance(x,y,(g->k_[k]));
+				min = calculateDistance(x,y,(g->k_[i]));
 				pos = i;
 			}
 		}				
@@ -300,9 +300,9 @@ Entry* sheararStarbucks2::searchGrid(double x, double y, grid* g)
 	}
 	if((x >= g3 && x <= g4) && (y >= g2 && y <= g3)){
 		for(int i = 0; i<l; i++){
-			double temp = calculateDistance(x,y,(g->l_[l]));
+			double temp = calculateDistance(x,y,(g->l_[i]));
 			if(temp<min){
-				min = calculateDistance(x,y,(g->l_[l]));
+				min = calculateDistance(x,y,(g->l_[i]));
 				pos = i;
 			}
 		}				
@@ -310,9 +310,9 @@ Entry* sheararStarbucks2::searchGrid(double x, double y, grid* g)
 	}
 	if(x <= g1 && (y >= g3 && y <= g4)){
 		for(int i = 0; i<m; i++){
-			double temp = calculateDistance(x,y,(g->m_[m]));
+			double temp = calculateDistance(x,y,(g->m_[i]));
 			if(temp<min){
-				min = calculateDistance(x,y,(g->m_[m]));
+				min = calculateDistance(x,y,(g->m_[i]));
 				pos = i;
 			}
 		}				
@@ -320,9 +320,9 @@ Entry* sheararStarbucks2::searchGrid(double x, double y, grid* g)
 	}
 	if((x >= g1 && x <= g2) && (y >= g3 && y <= g4)){
 		for(int i = 0; i<n; i++){
-			double temp = calculateDistance(x,y,(g->n_[n]));
+			double temp = calculateDistance(x,y,(g->n_[i]));
 			if(temp<min){
-				min = calculateDistance(x,y,(g->n_[n]));
+				min = calculateDistance(x,y,(g->n_[i]));
 				pos = i;
 			}
 		}				
@@ -330,9 +330,9 @@ Entry* sheararStarbucks2::searchGrid(double x, double y, grid* g)
 	}
 	if((x >= g2 && x <= g3) && (y >= g3 && y <= g4)){
 		for(int i = 0; i<o; i++){
-			double temp = calculateDistance(x,y,(g->o_[o]));
+			double temp = calculateDistance(x,y,(g->o_[i]));
 			if(temp<min){
-				min = calculateDistance(x,y,(g->o_[o]));
+				min = calculateDistance(x,y,(g->o_[i]));
 				pos = i;
 			}
 		}				
@@ -340,9 +340,9 @@ Entry* sheararStarbucks2::searchGrid(double x, double y, grid* g)
 	}
 	if((x >= g3 && x <= g4) && (y >= g3 && y <= g4)){
 		for(int i = 0; i<p; i++){
-			double temp = calculateDistance(x,y,(g->p_[p]));
+			double temp = calculateDistance(x,y,(g->p_[i]));
 			if(temp<min){
-				min = calculateDistance(x,y,(g->p_[p]));
+				min = calculateDistance(x,y,(g->p_[i]));
 				pos = i;
 			}
 		}				
