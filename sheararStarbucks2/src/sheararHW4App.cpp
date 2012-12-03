@@ -94,7 +94,7 @@ void sheararHW4App::setup()
 	console() << "Build Complete." << endl;
 
 	console() << "Running Closest Starbucks Algorithm..." << endl;
-	Entry* closest = ssb.getNearest(0.1234567, 0.1234567); //ambiguous current location input for testing purposes
+	Entry* closest = ssb.getNearest(0.1234567, 0.6234567); //ambiguous current location input for testing purposes
 
 	console() << "Algorithm Complete. " << endl;
 

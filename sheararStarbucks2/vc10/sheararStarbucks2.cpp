@@ -270,13 +270,13 @@ Entry* sheararStarbucks2::searchGrid(double x, double y, grid* g)
 	}
 	if(x <= g1 && (y >= g2 && y <= g3)){
 		for(int j = 0; j<i; j++){
-			double temp = calculateDistance(x,y,(g->i_[i]));
+			double temp = calculateDistance(x,y,(g->i_[j]));
 			if(temp<min){
-				min = calculateDistance(x,y,(g->i_[i]));
-				pos = i;
+				min = calculateDistance(x,y,(g->i_[j]));
+				pos = j;
 			}
 		}				
-		return g->a_[i];
+		return g->i_[pos];
 	}
 	if((x >= g1 && x <= g2) && (y >= g2 && y <= g3)){
 		for(int i = 0; i<j; i++){
